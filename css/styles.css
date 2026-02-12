@@ -5,118 +5,137 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    padding: 20px;
-    margin: 0; 
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;                 
-    background-size: cover;                       
-    background-position: center;                  
-    background-attachment: fixed;                 
-    background-color: #f0f0f0;                    
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px ;
-    margin-right: 50px ;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
-    background-color: #86AABA;
-    color: #ffe9c9;
+    color: #333;
+    
+    background-image: url("../images/background.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position: center;
+    background-attachment: fixed; 
+    background-color: #f0f0f0;    
+    
+    padding: 20px 0; 
 }
 
 .container {
-    max-width: 800px;  
-    margin: 0 auto;    
+    width: 90%;             
+    max-width: 1000px;      
+    margin: 0 auto;         
 }
 
-.about_me_card {
-    background: #829699;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
-    text-align: center; 
-    color: #ffe9c9;
+.card, .footer-card {
+    background-color: rgba(47, 62, 70, 0.9); 
+    color: #ffe9c9;         
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
-.about_me_card img {
-    display: block;
-    margin: 0 auto 15px; 
-    border-radius: 4px;
-}
-
-.card {
-    background: #614c41;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
-    color: #ffe9c9;
-
-}
-.another_card {
-    background: #2f3e4675;
-    padding: 20px;
-    margin-bottom: 20px;
-
-    margin-left: 460px;
-    margin-right: 460px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0, 1);
-    color: #ffe9c9;
-
-}
-h1 {
+.header-card {
     text-align: center;
-    margin-bottom: 10px;
+    border-bottom: 4px solid #A4C4D2; 
 }
+
+.header-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.about-me-card {
+    text-align: center;
+}
+
+.about-me-card img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;     
+    border: 4px solid #A4C4D2;
+    width: 150px;           
+    height: 150px;
+    object-fit: cover;      
+}
+
+a {
+    color: #A4C4D2; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffe9c9; 
+    text-decoration: underline;
+}
+
 h2 {
-    margin-bottom: 10px;
-    margin-top: 20px;
+    border-bottom: 2px solid #614c41; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
-p {
-    margin-bottom: 10px;
-}
+
 ul {
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-a {
-    text-decoration: none;
-    color: #0077cc;
-}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #fff;
 }
+
 th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
+    padding: 12px;
+    border: 1px solid #555;
+    text-align: left;
 }
+
 th {
-    background-color: #2f3e46;
-    color: white;
+    background-color: #1e282d; 
+    color: #A4C4D2;
 }
+
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-input, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-button {
-    padding: 10px;
-    background-color: #2f3e46;
-    color: white;
-    border: none;
-    cursor: pointer;    
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
+input, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #A4C4D2; 
+    color: #2f3e46;            
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffe9c9; 
+}
+
+.footer-card {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
