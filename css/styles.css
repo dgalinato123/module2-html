@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0; 
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;                 
+    background-size: cover;                       
+    background-position: center;                  
+    background-attachment: fixed;                 
+    background-color: #f0f0f0;                    
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px ;
+    margin-right: 50px ;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+    background-color: #86AABA;
+    color: #ffe9c9;
+}
+
+.container {
+    max-width: 800px;  
+    margin: 0 auto;    
+}
+
+.about_me_card {
+    background: #829699;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+    text-align: center; 
+    color: #ffe9c9;
+}
+
+.about_me_card img {
+    display: block;
+    margin: 0 auto 15px; 
+    border-radius: 4px;
+}
+
+.card {
+    background: #614c41;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+    color: #ffe9c9;
+
+}
+.another_card {
+    background: #2f3e4675;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    margin-left: 460px;
+    margin-right: 460px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 1);
+    color: #ffe9c9;
+
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+p {
+    margin-bottom: 10px;
+}
+ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: #0077cc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+th {
+    background-color: #2f3e46;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px;
+    background-color: #2f3e46;
+    color: white;
+    border: none;
+    cursor: pointer;    
+}
+
