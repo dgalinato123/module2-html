@@ -11,7 +11,15 @@
     <div class="container">
         
         <header class="card header-card">
-            <h1>Denver Galinato</h1>
+
+            <h1>Denver Galinato</h1>  <label class="theme-toggle">
+                <input type="checkbox" id="toggle"/>
+                <span class="slider round" id="theme-toggle">
+                  <div class="background"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </span>
+              </label>
             <p>IT Student | Web Systems and Development</p>
         </header>
 
@@ -25,8 +33,9 @@
                     GitHub: <a href="https://github.com/dgalinato123" target="_blank">github.com</a>
                 </p>
             </section>
-
-            <section class="card">
+            <button id="toggleSkills">Show/Hide Skills</button>
+            <section class="card" id="skillsSection">
+                
                 <h2>Skills</h2>
                 <div class="skills-grid">
                     <ul>
@@ -88,10 +97,10 @@
             <section class="card">
                 <h2>Contact Me</h2>
                 <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
                     <textarea placeholder="Message" rows="4"></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submitBtn">Submit</button>
                 </form>
             </section>
         </main>
@@ -99,6 +108,7 @@
         <footer class="footer-card">
             <p>&copy; 2026 Denver Galinato. All rights reserved.</p>
         </footer>
-
-    </div> </body>
+        <script src ="js/script.js">            
+        </script>
+</body>
 </html>
