@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denver Galinato | Personal CV</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="card header-card">
+
+            <h1>Denver Galinato</h1>  <label class="theme-toggle">
+                <input type="checkbox" id="toggle"/>
+                <span class="slider round" id="theme-toggle">
+                  <div class="background"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </span>
+              </label>
+            <p>IT Student | Web Systems and Development</p>
+        </header>
+
+        <main>
+            <section class="card about-me-card">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="Profile Picture" width="200">
+                <p>I am 19 years old and a student at the University of Southern Philippines.</p>
+                <p>
+                    Email: <a href="mailto:dgalinato123@gmail.com">dgalinato123@gmail.com</a><br>
+                    GitHub: <a href="https://github.com/dgalinato123" target="_blank">github.com</a>
+                </p>
+            </section>
+            <button id="toggleSkills">Show/Hide Skills</button>
+            <section class="card" id="skillsSection">
+                
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul>
+                        <li>Web Development
+                            <ul>
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Education</h2>
+                <table border="1" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Institution</th>
+                            <th>Year Graduated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>College</td>
+                            <td>USTP - CDO Campus</td>
+                            <td>2028</td>
+                        </tr>
+                        <tr>
+                            <td>Senior High School</td>
+                            <td>CDONHS - SHS</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Junior High School</td>
+                            <td>CDONHS - JHS</td>
+                            <td>2022</td>
+                        </tr>
+                        <tr>
+                            <td>Elementary</td>
+                            <td>Macasandig Elementary</td>
+                            <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td>Kindergarten</td>
+                            <td>Mandumol Day Care Center</td>
+                            <td>2012</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>Contact Me</h2>
+                <form>
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit" id="submitBtn">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer-card">
+            <p>&copy; 2026 Denver Galinato. All rights reserved.</p>
+        </footer>
+        <script src ="js/script.js">            
+        </script>
+</body>
+</html>
